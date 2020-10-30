@@ -3,7 +3,7 @@ body {
   font-size: 16px;
   line-height: 1;
 }
-
+/* Textarea properties*/
 textarea {
   background: transparent;
   border: none;
@@ -35,7 +35,7 @@ textarea {
   height: 80px;
   border-top: 1px solid white;
 }
-
+/* For box that contains the hours for each row*/
 .hour {
   background-color: #ffffff;
   color: #000000;
@@ -43,25 +43,25 @@ textarea {
   border-radius: 5px;
   background-color: lightblue;
 }
-
+/* For hours that are past current time*/
 .past {
   background-color: #d3d3d3;
   color:black;
   font-size: 30px;
 }
-
+/* For hour that is current*/
 .present {
   background-color: #ff6961;
   color:black;
   font-size: 30px;
 }
-
+/* For future hours */
 .future {
   background-color: #77dd77;
   color:black;
   font-size: 30px;
 }
-
+/* Save button properties*/
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
@@ -74,6 +74,7 @@ textarea {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
 #center {
   text-align: center;
 }
