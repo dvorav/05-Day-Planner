@@ -30,7 +30,6 @@ let timeFormat = m.format("YYYY[-]MM[-]DD H[:]m[:]s");
 let same8 = moment(timeFormat).isSame("2020-10-30 08:35:32", "hour");
 let before8 = moment(timeFormat).isBefore("2020-10-30 08:35:32", "hour");
 let after8 = moment(timeFormat).isAfter("2020-10-30 08:35:32", "hour");
-
 if (same8) {
   text8.classList.add("present");
 }
@@ -40,6 +39,7 @@ if (before8) {
 if (after8) {
   text8.classList.add("past");
 }
+
 //Timeblock for 9 am
 const text9 = document.querySelector("#textarea9");
 let same9 = moment(timeFormat).isSame("2020-10-30 09:35:32", "hour");
@@ -55,6 +55,7 @@ if (before9) {
 if (after9) {
   text9.classList.add("past");
 }
+
 //Timeblock for 10 am
 const text10 = document.querySelector("#textarea10");
 let same10 = moment(timeFormat).isSame("2020-10-30 10:35:32", "hour");
@@ -70,6 +71,7 @@ if (before10) {
 if (after10) {
   text10.classList.add("past");
 }
+
 //Timeblock for 11 am
 const text11 = document.querySelector("#textarea11");
 let same11 = moment(timeFormat).isSame("2020-10-30 11:35:32", "hour");
@@ -85,6 +87,7 @@ if (before11) {
 if (after11) {
   text11.classList.add("past");
 }
+
 //Timeblock for 12 pm
 const text12 = document.querySelector("#textarea12");
 let same12 = moment(timeFormat).isSame("2020-10-30 12:35:32", "hour");
@@ -100,6 +103,7 @@ if (before12) {
 if (after12) {
   text12.classList.add("past");
 }
+
 //Timeblock for 1 pm
 const text1 = document.querySelector("#textarea1");
 let same1 = moment(timeFormat).isSame("2020-10-30 13:35:32", "hour");
@@ -145,8 +149,8 @@ if (before3) {
 if (after3) {
   text3.classList.add("past");
 }
-//Timeblock for 4 pm
 
+//Timeblock for 4 pm
 const text4 = document.querySelector("#textarea4");
 let same4 = moment(timeFormat).isSame("2020-10-30 16:35:32", "hour");
 let before4 = moment(timeFormat).isBefore("2020-10-30 16:35:32", "hour");
@@ -161,87 +165,101 @@ if (before4) {
 if (after3) {
   text4.classList.add("past");
 }
-/*For present, past, future, 
- Same- Create a function where currenttime "isSame" to timeblock hour
- When both are equal, console.log to see if its true. If true, then have background color be blue
- For past, Create a function where currenter is 
- */
+
 //Submit Button 8
-saveBtn8.addEventListener("click", function () {
+$("#saveBtn8").on("click", function () {
   let text8Value = $("#textarea8").val();
 
-  localStorage.setItem("8:00", text8Value);
-  let output8 = localStorage.getItem("8:00");
+  localStorage.setItem("eight", text8Value);
+  let output8 = localStorage.getItem("eight");
   $("#textarea8").text(output8);
+  
 });
+ $("#textarea8").text(localStorage.eight)
 
 //Submit Button 9
-saveBtn9.addEventListener("click", function () {
-  let text9Value = $("#textarea8").val();
+$("#saveBtn9").on("click", function () {
+  let text9Value = $("#textarea9").val();
 
-  localStorage.setItem("9:00", text9Value);
-  let output9 = localStorage.getItem("9:00");
+  localStorage.setItem("nine", text9Value);
+  let output9 = localStorage.getItem("nine");
   $("#textarea9").text(output9);
 });
+$("#textarea9").text(localStorage.nine)
 
 //Submit Button 10
-saveBtn10.addEventListener("click", function () {
+$("#saveBtn10").on("click", function () {
   let text10Value = $("#textarea10").val();
 
-  localStorage.setItem("10:00", text10Value);
-  let output10 = localStorage.getItem("10:00");
+  localStorage.setItem("ten", text10Value);
+  let output10 = localStorage.getItem("ten");
   $("#textarea10").text(output10);
 });
+$("#textarea10").text(localStorage.ten)
 
 //Submit Button 11
-saveBtn11.addEventListener("click", function () {
+$("#saveBtn11").on("click", function () {
   let text11Value = $("#textarea11").val();
 
-  localStorage.setItem("11:00", text11Value);
-  let output11 = localStorage.getItem("11:00");
+  localStorage.setItem("eleven", text11Value);
+  let output11 = localStorage.getItem("eleven");
   $("#textarea11").text(output11);
 });
+$("#textarea11").text(localStorage.eleven)
 
 //Submit Button 12
-saveBtn12.addEventListener("click", function () {
+$("#saveBtn12").on("click", function () {
   let text12Value = $("#textarea12").val();
 
-  localStorage.setItem("12:00", text12Value);
-  let output12 = localStorage.getItem("12:00");
+  localStorage.setItem("twelve", text12Value);
+  let output12 = localStorage.getItem("twelve");
   $("#textarea12").text(output12);
 });
+$("#textarea12").text(localStorage.twelve)
 
 //Submit Button 1
-saveBtn1.addEventListener("click", function () {
+$("#saveBtn1").on("click", function () {
   let text1Value = $("#textarea1").val();
 
-  localStorage.setItem("1:00", text1Value);
-  let output1 = localStorage.getItem("1:00");
+  localStorage.setItem("one", text1Value);
+  let output1 = localStorage.getItem("one");
   $("#textarea1").text(output1);
 });
+$("#textarea1").text(localStorage.one)
+
 
 //Submit Button 2
-saveBtn2.addEventListener("click", function () {
+$("#saveBtn2").on("click", function () {
   let text2Value = $("#textarea2").val();
 
-  localStorage.setItem("2:00", text2Value);
-  let output2 = localStorage.getItem("2:00");
+  localStorage.setItem("two", text2Value);
+  let output2 = localStorage.getItem("two");
   $("#textarea2").text(output2);
 });
+$("#textarea2").text(localStorage.two)
 
 //Submit Button 3
-saveBtn3.addEventListener("click", function () {
+$("#saveBtn3").on("click", function () {
   let text3Value = $("#textarea3").val();
 
-  localStorage.setItem("3:00", text3Value);
-  let output3 = localStorage.getItem("3:00");
+  localStorage.setItem("three", text3Value);
+  let output3 = localStorage.getItem("three");
   $("#textarea3").text(output3);
 });
+$("#textarea3").text(localStorage.three)
+
 //Submit Button 4
-saveBtn4.addEventListener("click", function () {
+$("#saveBtn4").on("click", function() {
+
   let text4Value = $("#textarea4").val();
 
-  localStorage.setItem("4:00", text4Value);
-  let output4 = localStorage.getItem("4:00");
+  localStorage.setItem("four", text4Value);
+  let output4 = localStorage.getItem("four");
   $("#textarea4").text(output4);
 });
+$("#textarea4").text(localStorage.four)
+
+//Clear Textarea
+$("#clear").on("click", function(){
+  localStorage.clear()
+})
