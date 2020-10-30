@@ -146,7 +146,7 @@ if (after3) {
   text3.classList.add("past");
 }
 //Timeblock for 4 pm
-   
+
 const text4 = document.querySelector("#textarea4");
 let same4 = moment(timeFormat).isSame("2020-10-30 16:35:32", "hour");
 let before4 = moment(timeFormat).isBefore("2020-10-30 16:35:32", "hour");
@@ -169,99 +169,79 @@ if (after3) {
 //Submit Button 8
 saveBtn8.addEventListener("click", function () {
   let text8Value = $("#textarea8").val();
-  
- localStorage.setItem("8:00", text8Value);
- let output8 = localStorage.getItem("8:00")
- $("#textarea8").text(output8)
 
-
-})
-
-//Submit Button 8
-saveBtn8.addEventListener("click", function () {
-  let text8Value = $("#textarea8").val();
-  
- localStorage.setItem("8:00", text8Value);
- let output8 = localStorage.getItem("8:00")
- $("#textarea8").text(output8)
-
-
-})
+  localStorage.setItem("8:00", text8Value);
+  let output8 = localStorage.getItem("8:00");
+  $("#textarea8").text(output8);
+});
 
 //Submit Button 9
 saveBtn9.addEventListener("click", function () {
   let text9Value = $("#textarea8").val();
-  
- localStorage.setItem("9:00", text9Value);
- let output9 = localStorage.getItem("9:00")
- $("#textarea9").text(output9)
 
-
-})
+  localStorage.setItem("9:00", text9Value);
+  let output9 = localStorage.getItem("9:00");
+  $("#textarea9").text(output9);
+});
 
 //Submit Button 10
 saveBtn10.addEventListener("click", function () {
   let text10Value = $("#textarea10").val();
-  
- localStorage.setItem("10:00", text10Value);
- let output10 = localStorage.getItem("10:00")
- $("#textarea10").text(output10)
 
-
-})
+  localStorage.setItem("10:00", text10Value);
+  let output10 = localStorage.getItem("10:00");
+  $("#textarea10").text(output10);
+});
 
 //Submit Button 11
 saveBtn11.addEventListener("click", function () {
   let text11Value = $("#textarea11").val();
-  
- localStorage.setItem("11:00", text11Value);
- let output11 = localStorage.getItem("11:00")
- $("#textarea11").text(output11)
 
-
-})
+  localStorage.setItem("11:00", text11Value);
+  let output11 = localStorage.getItem("11:00");
+  $("#textarea11").text(output11);
+});
 
 //Submit Button 12
 saveBtn12.addEventListener("click", function () {
   let text12Value = $("#textarea12").val();
-  
- localStorage.setItem("12:00", text12Value);
- let output12 = localStorage.getItem("12:00")
- $("#textarea12").text(output12)
 
-
-})
+  localStorage.setItem("12:00", text12Value);
+  let output12 = localStorage.getItem("12:00");
+  $("#textarea12").text(output12);
+});
 
 //Submit Button 1
 saveBtn1.addEventListener("click", function () {
   let text1Value = $("#textarea1").val();
-  
- localStorage.setItem("1:00", text1Value);
- let output1 = localStorage.getItem("1:00")
- $("#textarea1").text(output1)
 
+  localStorage.setItem("1:00", text1Value);
+  let output1 = localStorage.getItem("1:00");
+  $("#textarea1").text(output1);
+});
 
-})
+//Submit Button 2
+saveBtn2.addEventListener("click", function () {
+  let text2Value = $("#textarea2").val();
 
-//Submit Button 8
-saveBtn8.addEventListener("click", function () {
-  let text8Value = $("#textarea8").val();
-  
- localStorage.setItem("8:00", text8Value);
- let output8 = localStorage.getItem("8:00")
- $("#textarea8").text(output8)
+  localStorage.setItem("2:00", text2Value);
+  let output2 = localStorage.getItem("2:00");
+  $("#textarea2").text(output2);
+});
 
+//Submit Button 3
+saveBtn3.addEventListener("click", function () {
+  let text3Value = $("#textarea3").val();
 
-})
+  localStorage.setItem("3:00", text3Value);
+  let output3 = localStorage.getItem("3:00");
+  $("#textarea3").text(output3);
+});
+//Submit Button 4
+saveBtn4.addEventListener("click", function () {
+  let text4Value = $("#textarea4").val();
 
-//Submit Button 8
-saveBtn8.addEventListener("click", function () {
-  let text8Value = $("#textarea8").val();
-  
- localStorage.setItem("8:00", text8Value);
- let output8 = localStorage.getItem("8:00")
- $("#textarea8").text(output8)
-
-
-})
-
+  localStorage.setItem("4:00", text4Value);
+  let output4 = localStorage.getItem("4:00");
+  $("#textarea4").text(output4);
+});
