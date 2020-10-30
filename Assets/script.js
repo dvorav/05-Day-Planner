@@ -146,6 +146,7 @@ if (after3) {
   text3.classList.add("past");
 }
 //Timeblock for 4 pm
+   
 const text4 = document.querySelector("#textarea4");
 let same4 = moment(timeFormat).isSame("2020-10-30 16:35:32", "hour");
 let before4 = moment(timeFormat).isBefore("2020-10-30 16:35:32", "hour");
@@ -165,7 +166,102 @@ if (after3) {
  When both are equal, console.log to see if its true. If true, then have background color be blue
  For past, Create a function where currenter is 
  */
-
+//Submit Button 8
 saveBtn8.addEventListener("click", function () {
-  localStorage.setItem("8:00", text8.nodeValue());
-});
+  let text8Value = $("#textarea8").val();
+  
+ localStorage.setItem("8:00", text8Value);
+ let output8 = localStorage.getItem("8:00")
+ $("#textarea8").text(output8)
+
+
+})
+
+//Submit Button 8
+saveBtn8.addEventListener("click", function () {
+  let text8Value = $("#textarea8").val();
+  
+ localStorage.setItem("8:00", text8Value);
+ let output8 = localStorage.getItem("8:00")
+ $("#textarea8").text(output8)
+
+
+})
+
+//Submit Button 9
+saveBtn9.addEventListener("click", function () {
+  let text9Value = $("#textarea8").val();
+  
+ localStorage.setItem("9:00", text9Value);
+ let output9 = localStorage.getItem("9:00")
+ $("#textarea9").text(output9)
+
+
+})
+
+//Submit Button 10
+saveBtn10.addEventListener("click", function () {
+  let text10Value = $("#textarea10").val();
+  
+ localStorage.setItem("10:00", text10Value);
+ let output10 = localStorage.getItem("10:00")
+ $("#textarea10").text(output10)
+
+
+})
+
+//Submit Button 11
+saveBtn11.addEventListener("click", function () {
+  let text11Value = $("#textarea11").val();
+  
+ localStorage.setItem("11:00", text11Value);
+ let output11 = localStorage.getItem("11:00")
+ $("#textarea11").text(output11)
+
+
+})
+
+//Submit Button 12
+saveBtn12.addEventListener("click", function () {
+  let text12Value = $("#textarea12").val();
+  
+ localStorage.setItem("12:00", text12Value);
+ let output12 = localStorage.getItem("12:00")
+ $("#textarea12").text(output12)
+
+
+})
+
+//Submit Button 1
+saveBtn1.addEventListener("click", function () {
+  let text1Value = $("#textarea1").val();
+  
+ localStorage.setItem("1:00", text1Value);
+ let output1 = localStorage.getItem("1:00")
+ $("#textarea1").text(output1)
+
+
+})
+
+//Submit Button 8
+saveBtn8.addEventListener("click", function () {
+  let text8Value = $("#textarea8").val();
+  
+ localStorage.setItem("8:00", text8Value);
+ let output8 = localStorage.getItem("8:00")
+ $("#textarea8").text(output8)
+
+
+})
+
+//Submit Button 8
+saveBtn8.addEventListener("click", function () {
+  let text8Value = $("#textarea8").val();
+  
+ localStorage.setItem("8:00", text8Value);
+ let output8 = localStorage.getItem("8:00")
+ $("#textarea8").text(output8)
+
+
+})
+
