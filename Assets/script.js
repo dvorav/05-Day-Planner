@@ -1,44 +1,41 @@
-/* Have moment.js intergrated into file
-Have date and time show underneath heading
-Have a schedule of 8am to 5pm show for the day.
-For each hour, have a textarea for which you can add your task, along with a save button.
-Past hours show a color; current hour shows another; and future hours show another.
-Data is saved to local storage and displayed after refresh.
-For textarea, input text into textarea. Once submit is clicked. text is setitem  and also getitem to localstorage
-For each timeblock have time be the key and value be the task inserted into textarea
-*/
-
-//Display Time  Needs
-let dateDisplay = document.querySelector("#currentDay");
-
 //Current Time
 let m = moment();
+//Convert time to string
 let time = m.toString();
-
+// Change format to Day of week/ Month/ Day/ Year
 let dateFormat = m.format("[Today is] dddd[,] MMM Mo YYYY");
-dateDisplay.textContent = dateFormat;
+$("#currentDay").text(dateFormat);
 
 /*Timeblock background changes depending on time of the day 
 Past = grey
 Present = Green
 Future = Red */
 
+//Date Format
+let timeFormat = m.format("YYYY[-]MM[-]DD H[:]m[:]s");
+
 //Timeblock for 8 am
 const text8 = document.querySelector("#textarea8");
-
-let timeFormat = m.format("YYYY[-]MM[-]DD H[:]m[:]s");
+//Current time "isSame"/equal to the hour time
 let same8 = moment(timeFormat).isSame("2020-10-30 08:35:32", "hour");
+//Current time "isBefore" to the hour time
 let before8 = moment(timeFormat).isBefore("2020-10-30 08:35:32", "hour");
+//Current time "isAfter" to the hour time
 let after8 = moment(timeFormat).isAfter("2020-10-30 08:35:32", "hour");
+//If same8 is true; Show present css class
 if (same8) {
   text8.classList.add("present");
 }
+//If before8 is true; Show future css class
 if (before8) {
   text8.classList.add("future");
 }
+//If after8 is true; Shoe past css class
 if (after8) {
   text8.classList.add("past");
 }
+
+//Same functionality for other hours
 
 //Timeblock for 9 am
 const text9 = document.querySelector("#textarea9");
@@ -168,14 +165,17 @@ if (after3) {
 
 //Submit Button 8
 $("#saveBtn8").on("click", function () {
+  //What ever is inputed into textarea will be sent to localstorage once submit is clicked.
   let text8Value = $("#textarea8").val();
 
   localStorage.setItem("eight", text8Value);
   let output8 = localStorage.getItem("eight");
   $("#textarea8").text(output8);
-  
 });
- $("#textarea8").text(localStorage.eight)
+//Submit Button gets value from localstorage and displays it on textarea element
+$("#textarea8").text(localStorage.eight);
+
+//Same functionality for other submit buttons
 
 //Submit Button 9
 $("#saveBtn9").on("click", function () {
@@ -185,7 +185,7 @@ $("#saveBtn9").on("click", function () {
   let output9 = localStorage.getItem("nine");
   $("#textarea9").text(output9);
 });
-$("#textarea9").text(localStorage.nine)
+$("#textarea9").text(localStorage.nine);
 
 //Submit Button 10
 $("#saveBtn10").on("click", function () {
@@ -195,7 +195,7 @@ $("#saveBtn10").on("click", function () {
   let output10 = localStorage.getItem("ten");
   $("#textarea10").text(output10);
 });
-$("#textarea10").text(localStorage.ten)
+$("#textarea10").text(localStorage.ten);
 
 //Submit Button 11
 $("#saveBtn11").on("click", function () {
@@ -205,7 +205,7 @@ $("#saveBtn11").on("click", function () {
   let output11 = localStorage.getItem("eleven");
   $("#textarea11").text(output11);
 });
-$("#textarea11").text(localStorage.eleven)
+$("#textarea11").text(localStorage.eleven);
 
 //Submit Button 12
 $("#saveBtn12").on("click", function () {
@@ -215,7 +215,7 @@ $("#saveBtn12").on("click", function () {
   let output12 = localStorage.getItem("twelve");
   $("#textarea12").text(output12);
 });
-$("#textarea12").text(localStorage.twelve)
+$("#textarea12").text(localStorage.twelve);
 
 //Submit Button 1
 $("#saveBtn1").on("click", function () {
@@ -225,8 +225,7 @@ $("#saveBtn1").on("click", function () {
   let output1 = localStorage.getItem("one");
   $("#textarea1").text(output1);
 });
-$("#textarea1").text(localStorage.one)
-
+$("#textarea1").text(localStorage.one);
 
 //Submit Button 2
 $("#saveBtn2").on("click", function () {
@@ -236,7 +235,7 @@ $("#saveBtn2").on("click", function () {
   let output2 = localStorage.getItem("two");
   $("#textarea2").text(output2);
 });
-$("#textarea2").text(localStorage.two)
+$("#textarea2").text(localStorage.two);
 
 //Submit Button 3
 $("#saveBtn3").on("click", function () {
@@ -246,20 +245,21 @@ $("#saveBtn3").on("click", function () {
   let output3 = localStorage.getItem("three");
   $("#textarea3").text(output3);
 });
-$("#textarea3").text(localStorage.three)
+$("#textarea3").text(localStorage.three);
 
 //Submit Button 4
-$("#saveBtn4").on("click", function() {
-
+$("#saveBtn4").on("click", function () {
   let text4Value = $("#textarea4").val();
 
   localStorage.setItem("four", text4Value);
   let output4 = localStorage.getItem("four");
   $("#textarea4").text(output4);
 });
-$("#textarea4").text(localStorage.four)
+$("#textarea4").text(localStorage.four);
 
-//Clear Textarea
-$("#clear").on("click", function(){
-  localStorage.clear()
-})
+
+
+//Clears local storage once clear button is clicked.
+$("#clear").on("click", function () {
+  localStorage.clear();
+});
