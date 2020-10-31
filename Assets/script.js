@@ -259,7 +259,7 @@ $("#textarea4").text(localStorage.four);
 
 
 
-//Clears local storage once clear button is clicked.
+//Clears local storage once clear button is clicked..
 $("#clear").on("click", function () {
   localStorage.clear();
 });
