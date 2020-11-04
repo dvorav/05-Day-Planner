@@ -17,11 +17,11 @@ let timeFormat = m.format("YYYY[-]MM[-]DD H[:]m[:]s");
 //Timeblock for 8 am
 const text8 = document.querySelector("#textarea8");
 //Current time "isSame"/equal to the hour time
-let same8 = moment(timeFormat).isSame("2020-11-03 08:35:32", "hour");
+let same8 = moment(timeFormat).isSame("2020-11-04 08:35:32", "hour");
 //Current time "isBefore" to the hour time
-let before8 = moment(timeFormat).isBefore("2020-11-03 08:35:32", "hour");
+let before8 = moment(timeFormat).isBefore("2020-11-04 08:35:32", "hour");
 //Current time "isAfter" to the hour time
-let after8 = moment(timeFormat).isAfter("2020-11-03 08:35:32", "hour");
+let after8 = moment(timeFormat).isAfter("2020-11-04 08:35:32", "hour");
 //If same8 is true; Show present css class
 if (same8) {
   text8.classList.add("present");
@@ -39,9 +39,9 @@ if (after8) {
 
 //Timeblock for 9 am
 const text9 = document.querySelector("#textarea9");
-let same9 = moment(timeFormat).isSame("2020-11-03 09:35:32", "hour");
-let before9 = moment(timeFormat).isBefore("2020-11-03 09:35:32", "hour");
-let after9 = moment(timeFormat).isAfter("2020-11-03 09:35:32", "hour");
+let same9 = moment(timeFormat).isSame("2020-11-04 09:35:32", "hour");
+let before9 = moment(timeFormat).isBefore("2020-11-04 09:35:32", "hour");
+let after9 = moment(timeFormat).isAfter("2020-11-04 09:35:32", "hour");
 
 if (same9) {
   text9.classList.add("present");
@@ -55,9 +55,9 @@ if (after9) {
 
 //Timeblock for 10 am
 const text10 = document.querySelector("#textarea10");
-let same10 = moment(timeFormat).isSame("2020-11-03 10:35:32", "hour");
-let before10 = moment(timeFormat).isBefore("2020-11-03 10:35:32", "hour");
-let after10 = moment(timeFormat).isAfter("2020-11-03 10:35:32", "hour");
+let same10 = moment(timeFormat).isSame("2020-11-04 10:35:32", "hour");
+let before10 = moment(timeFormat).isBefore("2020-11-04 10:35:32", "hour");
+let after10 = moment(timeFormat).isAfter("2020-11-04 10:35:32", "hour");
 
 if (same10) {
   text10.classList.add("present");
@@ -71,9 +71,9 @@ if (after10) {
 
 //Timeblock for 11 am
 const text11 = document.querySelector("#textarea11");
-let same11 = moment(timeFormat).isSame("2020-11-03 11:35:32", "hour");
-let before11 = moment(timeFormat).isBefore("2020-11-03 11:35:32", "hour");
-let after11 = moment(timeFormat).isAfter("2020-11-03 11:35:32", "hour");
+let same11 = moment(timeFormat).isSame("2020-11-04 11:35:32", "hour");
+let before11 = moment(timeFormat).isBefore("2020-11-04 11:35:32", "hour");
+let after11 = moment(timeFormat).isAfter("2020-11-04 11:35:32", "hour");
 
 if (same11) {
   text11.classList.add("present");
@@ -87,9 +87,9 @@ if (after11) {
 
 //Timeblock for 12 pm
 const text12 = document.querySelector("#textarea12");
-let same12 = moment(timeFormat).isSame("2020-11-03 12:35:32", "hour");
-let before12 = moment(timeFormat).isBefore("2020-11-03 12:35:32", "hour");
-let after12 = moment(timeFormat).isAfter("2020-11-03 12:35:32", "hour");
+let same12 = moment(timeFormat).isSame("2020-11-04 12:35:32", "hour");
+let before12 = moment(timeFormat).isBefore("2020-11-04 12:35:32", "hour");
+let after12 = moment(timeFormat).isAfter("2020-11-04 12:35:32", "hour");
 
 if (same12) {
   text12.classList.add("present");
@@ -103,9 +103,9 @@ if (after12) {
 
 //Timeblock for 1 pm
 const text1 = document.querySelector("#textarea1");
-let same1 = moment(timeFormat).isSame("2020-11-03 13:35:32", "hour");
-let before1 = moment(timeFormat).isBefore("2020-11-03 13:35:32", "hour");
-let after1 = moment(timeFormat).isAfter("2020-11-03 13:35:32", "hour");
+let same1 = moment(timeFormat).isSame("2020-11-04 13:35:32", "hour");
+let before1 = moment(timeFormat).isBefore("2020-11-04 13:35:32", "hour");
+let after1 = moment(timeFormat).isAfter("2020-11-04 13:35:32", "hour");
 
 if (same1) {
   text1.classList.add("present");
@@ -118,9 +118,9 @@ if (after1) {
 }
 //Timeblock for 2 pm
 const text2 = document.querySelector("#textarea2");
-let same2 = moment(timeFormat).isSame("2020-11-03 14:35:32", "hour");
-let before2 = moment(timeFormat).isBefore("2020-11-03 14:35:32", "hour");
-let after2 = moment(timeFormat).isAfter("2020-11-03 14:35:32", "hour");
+let same2 = moment(timeFormat).isSame("2020-11-04 14:35:32", "hour");
+let before2 = moment(timeFormat).isBefore("2020-11-04 14:35:32", "hour");
+let after2 = moment(timeFormat).isAfter("2020-11-04 14:35:32", "hour");
 
 if (same2) {
   text2.classList.add("present");
@@ -133,9 +133,9 @@ if (after2) {
 }
 //Timeblock for 3 pm
 const text3 = document.querySelector("#textarea3");
-let same3 = moment(timeFormat).isSame("2020-11-03 15:35:32", "hour");
-let before3 = moment(timeFormat).isBefore("2020-11-03 15:35:32", "hour");
-let after3 = moment(timeFormat).isAfter("2020-11-03 15:35:32", "hour");
+let same3 = moment(timeFormat).isSame("2020-11-04 15:35:32", "hour");
+let before3 = moment(timeFormat).isBefore("2020-11-04 15:35:32", "hour");
+let after3 = moment(timeFormat).isAfter("2020-11-04 15:35:32", "hour");
 
 if (same3) {
   text3.classList.add("present");
@@ -149,9 +149,9 @@ if (after3) {
 
 //Timeblock for 4 pm
 const text4 = document.querySelector("#textarea4");
-let same4 = moment(timeFormat).isSame("2020-11-03 16:35:32", "hour");
-let before4 = moment(timeFormat).isBefore("2020-11-03 16:35:32", "hour");
-let after4 = moment(timeFormat).isAfter("2020-11-03 16:35:32", "hour");
+let same4 = moment(timeFormat).isSame("2020-11-04 16:35:32", "hour");
+let before4 = moment(timeFormat).isBefore("2020-11-04 16:35:32", "hour");
+let after4 = moment(timeFormat).isAfter("2020-11-04 16:35:32", "hour");
 
 if (same4) {
   text4.classList.add("present");
